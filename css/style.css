@@ -60,7 +60,9 @@ p {
 */
 
 #profile-image {
-    margin-left: 2rem;
+    margin: 2rem;
+    width: 50%;
+    border-radius: 50%;
 }
 
 .yada-yada {
@@ -118,6 +120,8 @@ Talks
     margin: 2rem;
 }
 
+/* intro-div */
+
 /* footer */
 #footer-link {
     font-size: 2rem;
@@ -168,6 +172,11 @@ footer {
     .social-list {
         margin-top: 2rem;
     }
+    #profile-image {
+        margin-left: 2rem;
+        width: 50%;
+        border-radius: 50%;
+    }
 }
 
 /* larger sizes */
@@ -175,5 +184,25 @@ footer {
     .livestream img {
         height: 20%;
         width: 50%;
+    }
+
+    #profile-image {
+        float: left;
+        margin-right: 10px;
+        clear: both;
+        width: 30%;
+        border-radius: 50%;
+        margin-bottom: 8rem;
+    }
+
+    .intro-p {
+        margin-left: 4rem;
+        overflow: auto;
+        display: block;
+    }
+
+    .section-title {
+        font-size: 3rem;
+        margin-top: 6rem;
     }
 }
