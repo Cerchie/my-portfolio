@@ -23,29 +23,29 @@
         <!-- Hi there! Hope you enjoy inspecting my HTML. If you have feedback you can reach me at luciacerchie@gmail.com -->
         <header>
             <div class="logo"></div>
-            <nav class="nav">
+            <nav class="nav" id="nav-id">
                 <ul>
-                    <li class=>
+                    <li >
                         <a href="#projects-section-id" class="section-link">
                             Recent Projects
                         </a>
                     </li>
-                    <li class=>
+                    <li >
                         <a href="#posts-section-id" class="section-link"> Blog Posts </a>
                     </li>
-                    <li class=>
+                    <li >
                         <a href="#talks-section-id" class="section-link"> Talks </a>
                     </li>
-                    <li class=>
+                    <li>
                         <a href="#contact-section-id" class="section-link"> Reach Out </a>
                     </li>
                 </ul>
             </nav>
         </header>
 
+
         <!--Introduction-->
         <section class="intro" id="home">
-            <h1 class="about-me"></h1>
             <img
                 src="img/lucia.png"
                 alt="a picture of Lucia Cerchie smiling"
@@ -53,53 +53,83 @@
             />
             <p class="yada-yada">
                 Hey there, welcome to my site! 
-                I'm Lucia Cerchie, a software engineer from the Phoenix area in the U.S. 
+                I'm Lucia Cerchie, a software engineer from the Phoenix area in the U.S.  </p>
+                <p class="yada-yada">
                 I'm well-versed in JavaScript, Node.js, and GraphQL, although I like to break projects 
                 down and build them up in different languages or frameworks so I can distill 
-                the principles of web design from them. 
+                the principles of web design from them.  </p>
+                <p class="yada-yada">
                 That means I'm also familiar with Python and SQL, 
                 and I've tinkered around with Golang in my free time.
-                My favorite new frontend frameworks are Alpine.js and Tailwind, 
-                but this website is pure vanilla, because JS and CSS are fun-damental. </p>
-        </section>
+                My favorite new frontend frameworks are Alpine.js and Tailwind. </p>
+            </section>
 
          <!-- recent projects -->
         <section class="projects-section" id="projects-section-id">
             <h2 class="section-title">Recent Projects</h2>
             <div class="projects">
                 <div class="project">
-                    <a href="#THISLINK"><h3 class="section-h3">My Portfolio Site</h3></a>
-                    <p>Here's where the code for this website lives!</p>
+                    <a href="#THISLINK"><h3 class="section-h3">my portfolio site 🎨</h3></a> 
+                    <p>Here's where the code for this website lives! 
+                        I chose to use HTML + CSS only because this was a single-page-app, 
+                        and the most complex functionality I needed was links.
+                         You can check out my resources in the README.
+                </p>
                 </div>
                 <div class="project">
-                    <a href="https://github.com/Cerchie/git-cherry-pick-tutorial"><h3 class="section-h3">git cherry pick tutorial</h3></a>
-                    <p>I wrote this tutorial to helps others learn to use the git cherry pick command.</p>
+                    <a href="https://github.com/Cerchie/git-cherry-pick-tutorial"><h3 class="section-h3">git cherry-pick tutorial 🍒</h3></a>
+                    <p>I wrote this tutorial to helps others learn to use the git cherry-pick command. 
+                        Sometimes, when it comes to using git commands, learning by doing is best. But you don't want to just
+                        play around with one of your treasured projects and mess up your commit history. Enter my tutorial! 
+                        Clone it down and play with git cherry-pick. 
+                    </p>
                 </div>
                 <div class="project">
-                    <a href="https://github.com/Cerchie/golang-quiz-cli"><h3 class="section-h3">oclif cli</h3></a>
-                    <p>This is a fun golang quiz I made to familiarize myself with the oclif cli framework. </p>
+                    <a href="https://github.com/Cerchie/golang-quiz-cli"><h3 class="section-h3">oclif cli 🖥️</h3></a>
+                    <p>Test your golang knowledge using a cli tool written in node! This is a fun golang quiz I made to familiarize myself with the oclif cli framework. 
+                         I had a lot of fun building it. I chose TypeScript over JavaScript to keep me honest 😉, 
+                        and went with the default testing framework so I'd have access to @oclif/test.</p>
                 </div>
+
+                <a href="#nav-id" class="section-link-arrow">🔝</a>
         </section>
         <!-- blog posts -->
         <section class="posts-section" id="posts-section-id">
-            <h2 class="section-title">Blog Posts</h2>
+            <h2 id="section-title-for-posts">Blog Posts</h2>
             <div class="posts-div">
-                <ul id="posts-ul">
-                    <li class="posts-li">
+                <div class="post">
+                <h3 class="posts-h3">
+                    <a href="https://dev.to/cerchie/my-family-solves-a-code-challenge-14ea">My Family Solves a Code Challenge 🔨 </a>
+                 
+                </h3>
+                <p class="post-p">This is a story about what happens when you give a software engineer, a mechanical engineer, and a toddler too much free time...</p>
+            </div> 
+            <div class="post">
+                <h3 class="posts-h3">
                         <a href="https://dev.to/cerchie/why-do-computers-count-from-zero-3mh6">Why Do Most Programming Languages Count From Zero?</a>
-                    </li>
-                    <li class="posts-li">
-                        <a href="https://dev.to/cerchie/my-family-solves-a-code-challenge-14ea">My Family Solves a Code Challenge</a>
-                    </li>
-                    <li class="posts-li">
+                    </h3>
+                    <p> I'd been counting the number of days from an appointment on my calendar.
+                         "0, 1, 2, 3..." I muttered under my breath.
+                          Good thing I said it out loud, or I wouldn't have caught my mistake. 
+                          That's what spending hours on array-based JavaScript challenges does for you!
+                          But why does JS index from zero in the first place?
+                     Join me while I learn some computer science.</p>
+                    </div> 
+                    <div class="post">
+                    <h3 class="posts-h3">
                         <a href="https://dev.to/cerchie/what-i-learned-from-building-rest-apis-in-3-different-languages-5cn1">What I Learned From Building REST APIs in 3 Different Languages</a>
-                    </li>
-                </ul>
+                    </h3>
+                    <p> Building something in a different language gives you a bird's eye perspective 
+                        that you really can't get from any other perspective. Here's what I learned about
+                        REST APIs from doing exactly that.
+                    </p>
+                </div>
             </div>
+            <a href="#nav-id" class="section-link-arrow">🔝</a>
         </section>
         <!-- talks -->
         <section class="talks-section" id="talks-section-id">
-            <h2 class="section-title">Talks & Livestreams</h2>
+            <h2 id="section-title-talks">Talks & Livestreams</h2>
             <div class="section-div">
                 <div class="livestream">
                 <h3 class="section-h3">The Practical DEV: Walkthrough Wednesday</h3>
@@ -114,8 +144,6 @@
                         src="img/dev-livestream.png"
                         alt="blog mock-up"
                         class="project-thumbnail"
-                        width="100"
-                        height="100"
                 />
             </a>
 
@@ -134,8 +162,7 @@
                         src="img/some-antics-livestream.png"
                         alt="blog mock-up"
                         class="project-thumbnail"
-                        width="100"
-                        height="100"
+
                 />
             </a>
 
@@ -154,53 +181,51 @@
                         src="img/csc-livestream.png"
                         alt="blog mock-up"
                         class="project-thumbnail"
-                        width="100"
-                        height="100"
+
                 />
             </a>
 
             </p>
             </div>
             </div>
+            <a href="#nav-id" class="section-link-arrow">🔝</a>
         </section>
         <!-- contact -->
-        <section class="contact-section" id="contact-section-id">
-            <h2 class="section-title">Reach Out</h2>
-            <div class="contact-section--div">
-                <a href="mailto:luciacerchie@gmail.com" class="footer-link"
-                >luciacerchie@gmail.com</a
-            >
-            </div>
-        </section>
+
 
         <!-- footer -->
         <footer class="footer">
-            <ul class="social-list">
-                <li class="social-list__item">
+               
+                <div class="contact-section-div" id="contact-section-id">
+               
+                    <a href="mailto:luciacerchie@gmail.com" id="footer-link"
+                    >luciacerchie@gmail.com</a
+                >
+                <div class="social-list">
                     <a
                         class="social-list__link"
                         href="https://github.com/cerchie"
                     >
                         <i class="fab fa-github-square"></i>
                     </a>
-                </li>
-                <li class="social-list__item">
+              
                     <a
                         class="social-list__link"
                         href="https://www.linkedin.com/in/luciacerchie/"
                     >
                         <i class="fab fa-linkedin"></i>
                     </a>
-                </li>
-                <li class="social-list__item">
+            
                     <a
                         class="social-list__link"
                         href="https://twitter.com/CerchieLucia"
                     >
                         <i class="fab fa-twitter-square"></i>
                     </a>
-                </li>
-            </ul>
+                </div>
+ 
+        </div>
+   
         </footer>
     </body>
 </html>
