@@ -180,7 +180,7 @@ footer {
 }
 
 /* larger sizes */
-@media all and (display-mode: fullscreen) {
+@media (min-width: 800px) {
     .livestream img {
         height: 20%;
         width: 50%;
@@ -199,6 +199,10 @@ footer {
         margin-left: 4rem;
         overflow: auto;
         display: block;
+    }
+
+    .yada-yada {
+        margin-top: 4rem;
     }
 
     .section-title {
