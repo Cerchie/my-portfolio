@@ -5,7 +5,7 @@
 
 body {
     font-family: Arial;
-    color: #006080;
+    color: #0f4880;
 }
 
 /* 
@@ -16,7 +16,7 @@ nav {
     display: flex; /* 1 */
     justify-content: space-between; /* 2 */
     padding: 1rem 2rem; /* 3 */
-    background: #006080; /* 4 */
+    background: #0f4880; /* 4 */
     color: #ffffff;
     font-size: 1.5rem;
 }
@@ -27,18 +27,22 @@ nav ul {
 }
 
 nav li {
-    padding-left: 1rem; /* 7! */
+    padding: 2rem;
 }
 
 nav a {
     color: white;
 }
 
+#cactus-icon {
+    width: 6rem;
+}
+
 /* 
   links
 */
 a {
-    color: #006080;
+    color: #0f4880;
     text-decoration: none;
 }
 
@@ -47,7 +51,7 @@ a {
 */
 
 section {
-    margin: 10rem;
+    margin: 18rem;
 }
 
 .section-title {
